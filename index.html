@@ -1,14 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zen Seguros</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Bem-vindo à Zen Seguros!</h1>
-  <p>Proteção veicular simples, rápida e confiável.</p>
-  <a href="https://wa.me/SEUNUMEROAQUI" target="_blank">Fale conosco no WhatsApp</a>
+  <h1>Faça sua cotação gratuita</h1>
+
+  <form action="https://formsubmit.co/SEUEMAIL@email.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <input type="tel" name="telefone" placeholder="(DDD) Seu telefone" required />
+    <input type="email" name="email" placeholder="Seu e-mail (opcional)" />
+    <textarea name="mensagem" placeholder="Qual seu interesse?" rows="4"></textarea>
+
+    <!-- Proteções extras -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://zenseguros.vercel.app/obrigado.html" />
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <p><a href="https://api.whatsapp.com/message/B5FETITDYMKWK1?autoload=1&app_absent=0" target="_blank" class="whatsapp-button">Fale conosco via WhatsApp</a></p>
 </body>
 </html>
